@@ -1,0 +1,178 @@
+body{
+	padding: 1%;
+}
+
+body a{
+	text-decoration: none;
+	color: #000;
+}
+
+body a:hover {
+	color: #000;
+}
+
+.genery {
+	max-width: 90%;
+	max-height: fit-content;
+	display: flexbox;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 1%;
+	background-color: green;
+}
+ 
+.nav, .content {	
+	display: flex;		
+		
+}
+
+.nav {
+	width: 80%;
+	margin: 2% 10% ;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.content {
+	width: 101%;
+	/* justify-content: space-around; */		
+	border: 1px #000;
+	margin-top: 1%;
+	margin-left: 0;
+	padding-left: 0px;
+}
+
+.navLeft {
+	display: block;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.list{
+	padding: 0 10px;	
+}
+
+.list a{
+	/* display: flex; */
+	font-size: 24px;
+	margin: 0px 0px 20px 0px;	
+	list-style: none;	
+}
+
+.list a:before{
+	display: inline-block;		
+	content: '';	
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;		
+	margin: 0px 0px 0px 0px;
+}
+
+.list a:hover{
+	background-color: yellow;
+}
+
+.text {
+	width: 87%;
+	font-size: 18px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 33px;
+	margin: 0px 0px 30px 0px;	
+}
+
+.separator {
+	width: 99%;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+
+.text div {
+	margin: 5px;
+}
+
+.text:first-line{
+	color: #f1f1f1;
+}
+.text:first-letter{
+	color: red;
+	font-size: 50px;
+}
+
+.post{
+	display: flex;	
+	justify-content: space-between;
+}
+
+.post div {
+	background-color: aqua;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.post img {
+	padding-left: 50%;
+}
+
+#more {
+	display: none;
+}
+
+.text_button {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #3e8e41;	
+	border: 0;
+}
+
+.text_button:hover{
+	background-color: #2e6330;
+	color: #000;
+}
+
+.top{
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+	font-size: 30px;	
+	text-decoration: none;
+	color: #000;
+}
