@@ -1,0 +1,283 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>CSS. Часть №1 (Синтаксис + Обнуление)</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="reset.css">
+		<!-- Только CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="genery">
+				<div class="nav">
+			<div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		 <div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		 <div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		 <div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		 <div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		 <div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		 </div>
+		</div>
+		<div class="content">
+
+			<div class="navLeft">
+				<div class="list">
+					<p>
+						<a href="#one"> <img src="img/check-mark.png"> 1 </a>
+					</p>		
+					<p>
+						<a href="#two"> <img src="img/check-mark.png"> 2 </a>
+					</p>	
+					<p>
+						<a href="#three"> <img src="img/check-mark.png"> 3 </a>
+					</p>	
+					<p>
+						<a href ="#for"> <img src="img/check-mark.png"> 4 </a>
+					</p>	
+					<p>
+						<a href="#fiwe"> <img src="img/check-mark.png"> 5 </a>
+					</p>	
+				</div>
+			</div>		
+			<div class="text">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<div class="separator">
+					<a name="one"></a><h4>1</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dotsOne"> ... </span> <span id="moreOne">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btnOne" class="text_button" onclick="readMoreOne()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<a name="two"></a><h4>2</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<a name="three"></a><h4>3</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<h4><a name="for">4</a></h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<a name="fiwe"></a><h4>5</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<a name="six"></a><h4>6</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+				<div class="separator">
+					<a name="seven"></a><h4>7</h4>
+				</div>
+				<div class="post">
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>
+					<div class="post_1">
+						<img src="img/check-mark.png">
+						<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit
+							 <span id="dots"> ... </span> <span id="more">Libero quas error eum architecto iste tenetur esse quia, dolorem corrupti dolor fuga, odit natus. Optio dolor vel veniam vero 
+							 voluptatum ea?</span> </p>
+						<button id="btn" class="text_button" onclick="readMore()"> Подробнее </button>
+					</div>					
+				</div>
+			</div>		
+		</div>
+		</div>		
+		<a href="#" class="text_button top"> ↑ </a>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>
